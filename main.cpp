@@ -1,6 +1,8 @@
 #include <iostream>
 #include <chrono>
 #include "include/sorting_library.h"
+#include "randArray.h"
+using namespace std;
 
 
 int main() {
@@ -23,6 +25,11 @@ int main() {
 
     //calculate the duration between start and end and print to the terminal
     std::chrono::duration<double> time_in_seconds = end - start;
-    std::cout << std::fixed << "Duration: " << time_in_seconds.count() << std::endl;
+    //std::cout << std::fixed << "Duration: " << time_in_seconds.count() << std::endl;
+    randArray one;
+    double array;
+    one.timeAtSize(25000);
+
+   // delete[] array;
     return 0;
 }
