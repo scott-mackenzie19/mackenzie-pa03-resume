@@ -7,29 +7,23 @@ using namespace std;
 
 int main() {
 
-    //make some data to sort
-    int data[50];
-    for (int i = 0; i < 50; i++)
-        data[i] = i;
-
-    std::cout << std::fixed << std::showpoint;
-    std::cout.precision(9);
-    print_version_number();
-    //create a start and end time_point object
-    std::chrono::time_point<std::chrono::high_resolution_clock> start, end;
-
-    //get the current time, run the algo, then get the current time again
-    start = std::chrono::high_resolution_clock::now();
-    mystery03(data, 50);
-    end = std::chrono::high_resolution_clock::now();
-
-    //calculate the duration between start and end and print to the terminal
-    std::chrono::duration<double> time_in_seconds = end - start;
-    //std::cout << std::fixed << "Duration: " << time_in_seconds.count() << std::endl;
     randArray one;
-    double array;
-    one.timeAtSize(25000);
+    double array[5];
+    one.timeAtSize(10);
+    one.timeAtSize(100);
+    one.timeAtSize(1000);
+    one.timeAtSize(2000);
+    one.timeAtSize(5000);
+    one.timeAtSize(10000);
+   // one.timeAtSize(20000);
+   // one.timeAtSize(30000);
+  //  one.timeAtSize(40000);
+   // one.timeAtSize(50000);
+    //one.timeAtSize(100000);
+   // one.timeAtSize(1000000);
+    //one.timeAtSize(50000);
 
-   // delete[] array;
+    one.reverseTest(10000);
+
     return 0;
 }

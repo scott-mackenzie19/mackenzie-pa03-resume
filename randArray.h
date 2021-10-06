@@ -8,9 +8,11 @@
 
 
 class randArray {
+private:
 public:
     int* arrGenerator(int size);
     void timeAtSize(int size);
+    void reverseTest(int size);
 
 
 
