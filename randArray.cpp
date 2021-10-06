@@ -6,6 +6,7 @@
 #include <chrono>
 #include <iostream>
 #include "include/sorting_library.h"
+#include "DSString.h"
 using namespace std;
 //comments placed above referenced lines of code
 
@@ -28,7 +29,7 @@ int *randArray::arrGenerator(int size) {
 //to either a nlogn set of parallel arrays or n^2 parallel arrays.
 void randArray::timeAtSize(int size) {
     double avgArray[5];
-    string mysteryArray[5] = {"Mystery 01", "Mystery 02", "Mystery 03", "Mystery 04", "Mystery 05"};
+    DSString mysteryArray[5] = {"Mystery 01", "Mystery 02", "Mystery 03", "Mystery 04", "Mystery 05"};
     cout << "Size: " << size << endl;
     double timeArray[15];
     for (int i = 0; i < 15; i++) {
@@ -142,7 +143,7 @@ void randArray::timeAtSize(int size) {
             for (j = 0; j < 5 - i - 1; j++) {
                 if (avgArray[j] > avgArray[j+1]) {
                     double temp;
-                    string temp2;
+                    DSString temp2;
                     temp = avgArray[j];
                     temp2 = mysteryArray[j];
                     avgArray[j] = avgArray[j + 1];
@@ -172,8 +173,8 @@ void randArray::timeAtSize(int size) {
 void randArray::reverseTest(int size) {
     double compare1;
     double holder[2];
-    string nameHolder[2];
-    string nameHolder2[3];
+    DSString nameHolder[2];
+    DSString nameHolder2[3];
     double holder2[3];
     int sacredIndex;
     cout << "Classifications" << endl;
@@ -267,7 +268,7 @@ void randArray::reverseTest(int size) {
 
     double timeArray[15];
     double holda[3];
-    string wordHolda[3];
+    DSString wordHolda[3];
     for (int j = 0; j < 3; j++) {
         for (int i = 0; i < 15; i++) {
             int *tempArray = arrGenerator(10000);

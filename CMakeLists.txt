@@ -3,7 +3,7 @@ project(PA03_template)
 set(CMAKE_CXX_STANDARD 14)
 
 # Create the executable for sorting
-add_executable(PA03_sorting_mystery main.cpp randArray.cpp randArray.h)
+add_executable(PA03_sorting_mystery main.cpp randArray.cpp randArray.h DSString.cpp DSString.h)
 
 message("Platform: " $ENV{PLATFORM})
 if($ENV{PLATFORM} STREQUAL "wsl2")
