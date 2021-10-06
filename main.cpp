@@ -15,6 +15,7 @@ int main() {
     one.timeAtSize(2000);
     one.timeAtSize(5000);
     one.timeAtSize(10000);
+    double aye[5];
    // one.timeAtSize(20000);
    // one.timeAtSize(30000);
   //  one.timeAtSize(40000);
