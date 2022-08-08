@@ -1,6 +1,6 @@
 # Fall 2021 - PA03 - Mystery Sort
 
-- See the project handout [here](https://docs.google.com/document/d/1AsL1vmUqZs5aESM39dEMD6mSQdIcFVvCoVp1Vh2YbPc/edit?usp=sharing)
+Resume formatted version of Data Structures Project 3. The project provides 5 unnamed/encrypted sorting algorithms and tasks you to use their Big-O notation to determine which searching algorithm is which. You then narrow down the O(n^2) algorithms by running the extreme test cases and seeing how each responds. This was done by testing, and comparing, the speed of which each algorithm sorts (a 5 sort average), at varying data sizes.
 
 ## Important
 
