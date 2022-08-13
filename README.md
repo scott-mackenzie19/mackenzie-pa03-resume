@@ -1,6 +1,6 @@
 # Fall 2021 - PA03 - Mystery Sort
 
-Resume formatted version of Data Structures Project 3. The project provides 5 unnamed/encrypted sorting algorithms and tasks you to use their Big-O notation to determine which searching algorithm is which. You then narrow down the O(n^2) algorithms by running the extreme test cases and seeing how each responds. This was done by testing, and comparing, the speed of which each algorithm sorts (a 5 sort average), at varying data sizes.
+Resume formatted version of Data Structures Project 3. The project provides 5 unnamed/encrypted sorting algorithms and tasks you to use their Big-O notation to determine which searching algorithm is which. You then narrow down the O(n^2) algorithms by running the extreme test cases and seeing how each responds. This was done by testing, and comparing, the speed of which each algorithm sorts (a 5 sort average), at varying data sizes. In order for the project to link against the correct version of the myster_sorter library, you need to set a CMAKE environment variable: PLATFORM=wsl2` if you're on Windows using WSL OR add `PLATFORM=mac` if you're on a mac.
 
 ## Important
 
